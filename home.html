@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Form Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-info">
+            <h1>Evaluation Form Generator</h1>
+            <p>Use this free to make a customised and highly effective evaluation form that you can use at your education and training session.</p>
+            <p>This form is heavily based on research and will enable education department staff to understand:</p>
+            <ul>
+                <li>What was learnt</li>
+                <li>What change to practice will be made</li>
+                <li>How patients will benefit from the learning</li>
+                <li>Whether barriers exist that will prevent change being made</li>
+            </ul>
+            <p>Start by filling out your details below, then include details of the educational activity you are providing. When complete, click "Create Evaluation Form" to generate a downloadable PDF.</p>
+        </div>
+        <div class="form-container">
+            <h2>Your CPD Activity</h2>
+            <form id="evaluation-form">
+                <div class="form-group">
+                    <label for="activity-title">Activity Title</label>
+                    <input type="text" id="activity-title" name="activity-title">
+                </div>
+                <div class="form-group">
+                    <label for="activity-date">Activity Date</label>
+                    <input type="date" id="activity-date" name="activity-date">
+                </div>
+                <div class="form-group">
+                    <label>What Type of Learning Is It?</label>
+                    <input type="checkbox" id="online" name="learning-type" value="Online">
+                    <label for="online">Online</label>
+                    <input type="checkbox" id="in-service" name="learning-type" value="In-service">
+                    <label for="in-service">In-service</label>
+                    <input type="checkbox" id="mandatory-competency" name="learning-type" value="Mandatory Competency">
+                    <label for="mandatory-competency">Mandatory Competency</label>
+                    <input type="checkbox" id="presentation" name="learning-type" value="Presentation">
+                    <label for="presentation">Presentation</label>
+                    <input type="checkbox" id="other" name="learning-type" value="Other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="form-group">
+                    <label for="learning-outcomes">What Are The Learning Outcomes?</label>
+                    <input type="text" id="learning-outcome-1" name="learning-outcomes[]" placeholder="Outcome 01">
+                    <input type="text" id="learning-outcome-2" name="learning-outcomes[]" placeholder="Outcome 02">
+                    <button type="button" id="add-outcome">+ Add More</button>
+                </div>
+                <div class="form-group">
+                    <label for="company-logo">Upload Company Logo/Photo</label>
+                    <input type="file" id="company-logo" name="company-logo">
+                </div>
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="organization-name">Organization/Company Name</label>
+                    <input type="text" id="organization-name" name="organization-name">
+                </div>
+                <div class="form-group">
+                    <label for="role-position">Role Or Position</label>
+                    <input type="text" id="role-position" name="role-position">
+                </div>
+                <div class="form-actions">
+                    <button type="button" id="preview">Preview</button>
+                    <button type="submit">Create Evaluation Form</button>
+                </div>
+            </form>
+        </div>
+    </div><script src="script.js"></script>
+
+</body>
+</html>
